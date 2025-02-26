@@ -5,7 +5,7 @@ class Solution {
     public:
         int maxSubArraySum(vector<int>& nums){
             int maxSum=0, sum1=0, sum2=0, minSum=0;
-            for(int i=0; i<nums.size(); i++){
+            for(int i=0; i<nums.size(); i++){ // kadane's algo
                 sum1=sum1+nums[i];
                 sum2=sum2+nums[i];
                 maxSum=max(maxSum, sum1);
