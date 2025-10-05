@@ -8,10 +8,6 @@ int main()
 
     while (n != 1)
     {
-        if(n>=__INT_MAX__){
-            printf("Exceeding limit");
-            break;
-        }
         printf("%d ", n);
         if (n % 2 == 0)
         {
